@@ -69,7 +69,7 @@ export const Navigation = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-background border border-primary/10 rounded-lg shadow-lg z-10">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-background/60 backdrop-blur-md border border-primary/20 rounded-lg shadow-xl z-10">
                   {/* Invisible bridge to prevent gap issues */}
                   <div className="absolute -top-1 left-0 right-0 h-1 bg-transparent" />
                   <div className="py-2">
@@ -77,7 +77,7 @@ export const Navigation = () => {
                       <Link
                         key={service.name}
                         to={service.href}
-                        className="block px-4 py-2 text-sm text-foreground hover:bg-primary/5 hover:text-primary transition-smooth"
+                        className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-smooth"
                         onClick={() => setServicesOpen(false)}
                       >
                         {service.name}

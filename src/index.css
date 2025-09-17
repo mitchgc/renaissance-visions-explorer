@@ -47,7 +47,7 @@
     --gradient-hero: hsl(220, 100%, 10%); /* #111727 */
     
     /* Glassmorphism */
-    --glass-bg: hsla(0, 0%, 100%, 0.1);
+    --glass-bg: hsla(0, 0%, 100%, 0.6);
     --glass-border: hsla(0, 0%, 100%, 0.2);
     
     /* Shadows & Glows */
@@ -116,7 +116,7 @@
     --gradient-hero: hsl(220, 100%, 15%); /* #111727 */
     
     /* Dark Glassmorphism */
-    --glass-bg: hsla(220, 100%, 10%, 0.6);
+    --glass-bg: hsla(220, 100%, 10%, 0.8);
     --glass-border: hsla(0, 0%, 100%, 0.1);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
