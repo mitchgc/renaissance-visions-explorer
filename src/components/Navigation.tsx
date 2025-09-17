@@ -69,7 +69,7 @@ export const Navigation = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-background/60 backdrop-blur-md border border-primary/20 rounded-lg shadow-xl z-10">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-background/90 backdrop-blur-md border border-primary/20 rounded-lg shadow-xl z-10">
                   {/* Invisible bridge to prevent gap issues */}
                   <div className="absolute -top-1 left-0 right-0 h-1 bg-transparent" />
                   <div className="py-2">
