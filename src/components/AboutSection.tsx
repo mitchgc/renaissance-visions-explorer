@@ -1,159 +1,80 @@
-import { Button } from "@/components/ui/button";
-import { Star, Users, Award, Heart, Target, Shield } from "lucide-react";
-
 export const AboutSection = () => {
-  const values = [
-    {
-      icon: Heart,
-      title: "Compassion",
-      description: "We approach every interaction with empathy and understanding"
-    },
-    {
-      icon: Star,
-      title: "Excellence",
-      description: "We strive for the highest standards in everything we do"
-    },
-    {
-      icon: Users,
-      title: "Inclusion",
-      description: "We believe everyone deserves to be valued and included"
-    },
-    {
-      icon: Target,
-      title: "Empowerment",
-      description: "We help people achieve their goals and live independently"
-    },
-    {
-      icon: Shield,
-      title: "Trust",
-      description: "We build lasting relationships based on respect and reliability"
-    },
-    {
-      icon: Award,
-      title: "Quality",
-      description: "We deliver services that make a real difference in people's lives"
-    }
-  ];
-
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full -translate-x-48 -translate-y-48"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full translate-x-48 translate-y-48"></div>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-          <div className="space-y-8 animate-fade-up">
-            <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 rounded-full">
-              <Users className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">About Renaissance Group</span>
-            </div>
-
-            <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground">
-              Supporting people to live their 
-              <span className="text-primary"> best life</span>
-            </h2>
-
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                At Renaissance Group, we believe that every person deserves the opportunity to live with dignity, 
-                choice, and independence. For over 15 years, we've been dedicated to supporting people with 
-                disabilities to achieve their goals and participate fully in their communities.
-              </p>
-              
-              <p>
-                Our approach is person-centered, meaning we work with each individual to understand their unique 
-                needs, preferences, and aspirations. We don't believe in one-size-fits-all solutions – instead, 
-                we create tailored support plans that evolve with each person's journey.
-              </p>
-              
-              <p>
-                From our headquarters in New Zealand, we've built a reputation for delivering quality, 
-                compassionate support that truly makes a difference. Our team of dedicated professionals 
-                shares our vision of a more inclusive society where everyone has the opportunity to thrive.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg">
-                Learn about our team
-              </Button>
-              <Button variant="outline" size="lg">
-                Read success stories
-              </Button>
-            </div>
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6">
+        {/* Mission Header */}
+        <div className="max-w-5xl mx-auto text-center space-y-8 mb-16">
+          {/* Mission Badge */}
+          <div className="inline-flex items-center justify-center">
+            <span className="text-sm font-medium text-gray-600 bg-white px-6 py-2 rounded-full border border-gray-200 uppercase tracking-wider">
+              Our Mission
+            </span>
           </div>
 
-          {/* Stats */}
-          <div className="space-y-6 animate-scale-in">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-muted-foreground">People Supported</div>
-              </div>
-              <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="text-4xl font-bold text-accent mb-2">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="text-4xl font-bold text-primary mb-2">25+</div>
-                <div className="text-sm text-muted-foreground">Community Homes</div>
-              </div>
-              <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="text-4xl font-bold text-accent mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">Satisfaction Rate</div>
-              </div>
-            </div>
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight max-w-4xl mx-auto">
+            Supporting people to live their best life
+          </h1>
 
-            <div className="gradient-card p-8 rounded-2xl">
-              <h3 className="text-xl font-bold text-foreground mb-4">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To promote equity, choice, independence, control, and participation for all people 
-                in our community by providing innovative, person-centered support services that 
-                empower individuals to live their best life.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Values Section */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-display font-bold text-foreground mb-4">
-            Our Core Values
-          </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            These values guide everything we do and shape how we interact with the people we support, 
-            their families, and our community.
+          {/* Description */}
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            At Renaissance Group, we believe that every person deserves the opportunity to live with dignity, choice, and independence. For over 15 years, we've been dedicated to supporting people with disabilities to achieve their goals and participate fully in their communities.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {values.map((value, index) => (
-            <div
-              key={value.title}
-              className="group p-6 rounded-2xl border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-card hover:-translate-y-1"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <value.icon className="w-6 h-6 text-white" />
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {value.title}
-                  </h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
+        {/* Video Cards */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Left Video Card */}
+          <div className="bg-[#d4f26a] rounded-3xl p-8 relative overflow-hidden flex flex-col h-full">
+            <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 leading-tight">
+              Experience the Renaissance difference through our community
+            </h3>
+
+            <div className="mb-8 flex-grow">
+              <div className="relative rounded-2xl overflow-hidden aspect-video bg-black/5">
+                <iframe
+                  src="https://www.youtube.com/embed/nzZ6WQOEc6Q"
+                  title="Renaissance Community Video"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
-          ))}
+
+            <div className="mt-auto">
+              <button className="bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors font-medium">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          {/* Right Video Card */}
+          <div className="bg-gray-900 rounded-3xl p-8 relative overflow-hidden flex flex-col h-full">
+            <h3 className="text-2xl md:text-3xl font-medium text-white mb-6 leading-tight">
+              Hear from the people we support every day
+            </h3>
+
+            <div className="mb-8 flex-grow">
+              <div className="relative rounded-2xl overflow-hidden aspect-video bg-white/10">
+                <iframe
+                  src="https://www.youtube.com/embed/eD9GjylI1G4"
+                  title="Renaissance Support Stories"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div className="mt-auto">
+              <button className="bg-white/20 backdrop-blur text-white px-6 py-3 rounded-full hover:bg-white/30 transition-colors font-medium border border-white/30">
+                Our Stories
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

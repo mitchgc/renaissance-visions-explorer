@@ -1,119 +1,246 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Home, Users, Clock } from "lucide-react";
-import communityIcon from "@/assets/community-icon.jpg";
-import supportIcon from "@/assets/support-icon.jpg";
-import respiteIcon from "@/assets/respite-icon.jpg";
-
-const services = [
-  {
-    title: "Choices in Community",
-    description: "Choices in Community Living (CiCL) is an exciting alternative for individuals with high and complex disability needs currently living in a Residential Service. CiCL is designed to give more choice and control to individuals and families around supports and services.",
-    icon: communityIcon,
-    color: "from-primary to-primary-glow",
-    features: ["Individual choice", "Family involvement", "Flexible support", "Community integration"]
-  },
-  {
-    title: "Supported Living",
-    description: "Our Supported Living service provides people with disabilities the opportunity to live independently in their own home while receiving the support they need to achieve their goals and live their best life.",
-    icon: supportIcon,
-    color: "from-accent to-yellow-400",
-    features: ["Independent living", "Personal goals", "24/7 support available", "Skill development"]
-  },
-  {
-    title: "Respite Care",
-    description: "Respite care provides short-term relief for primary caregivers, allowing them to take a break while ensuring their loved one receives quality care in a supportive environment.",
-    icon: respiteIcon,
-    color: "from-purple-500 to-pink-500",
-    features: ["Short-term care", "Caregiver relief", "Quality support", "Flexible scheduling"]
-  }
-];
+import { Heart, Home, Users, Shield, Zap, ChevronRight, HandHeart, Globe, Coins } from "lucide-react";
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-background to-muted/30">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-6 max-w-7xl">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
-          <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 rounded-full mb-6">
-            <Heart className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">What we do</span>
-          </div>
-          
-          <h2 className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-6">
-            Promoting equity, choice, independence, control, and 
-            <span className="text-primary"> participation</span> for all people in our community.
+        <div className="text-center mb-20">
+          <span className="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 text-sm font-medium rounded-full mb-6">
+            OUR SERVICES
+          </span>
+
+          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 max-w-4xl mx-auto leading-tight">
+            How we support you
           </h2>
+
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We promote equity, choice, independence, and control through personalized support that helps you live your goals and build community connections.
+          </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className="group relative bg-white rounded-3xl p-8 shadow-card hover:shadow-elegant transition-all duration-500 hover:-translate-y-2"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              {/* Service Icon */}
-              <div className="relative mb-6">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} p-4 mb-4`}>
-                  <img 
-                    src={service.icon} 
-                    alt={`${service.title} icon`}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full flex items-center justify-center">
-                  <ArrowRight className="w-3 h-3 text-white" />
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                {service.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {service.description}
-              </p>
-
-              {/* Features */}
-              <div className="space-y-2 mb-6">
-                {service.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-sm text-muted-foreground">{feature}</span>
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {/* Service 1: Choices in Community */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-purple-500 to-purple-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Community Visual */}
+                  <div className="flex items-center justify-center">
+                    <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                      <Users className="w-16 h-16 text-white" />
+                    </div>
+                    {/* Floating elements */}
+                    <div className="absolute -top-4 -left-8 w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
+                      <Heart className="w-8 h-8 text-white/80" />
+                    </div>
+                    <div className="absolute -bottom-4 -right-8 w-20 h-20 bg-white/10 rounded-full flex items-center justify-center">
+                      <Home className="w-10 h-10 text-white/80" />
+                    </div>
                   </div>
-                ))}
+                </div>
               </div>
 
-              <Button 
-                variant="outline" 
-                className="w-full group-hover:border-primary group-hover:text-primary"
-              >
-                Learn more
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-
-              {/* Hover Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Choices in Community
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Transition from residential care to independent community living with greater choice and control.
+                </p>
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Service 2: Supported Living */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-blue-500 to-blue-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Independent Living Visual */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm mb-4">
+                      <Home className="w-14 h-14 text-white" />
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="w-12 h-12 bg-white/15 rounded-full flex items-center justify-center">
+                        <Shield className="w-6 h-6 text-white/80" />
+                      </div>
+                      <div className="w-12 h-12 bg-white/15 rounded-full flex items-center justify-center">
+                        <Zap className="w-6 h-6 text-white/80" />
+                      </div>
+                      <div className="w-12 h-12 bg-white/15 rounded-full flex items-center justify-center">
+                        <Heart className="w-6 h-6 text-white/80" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Supported Living
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Live independently in your community with goal-focused support that builds skills and connections.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 3: Very High Needs Funding */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Network Visual */}
+                  <div className="flex items-center justify-center">
+                    <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                      <Globe className="w-12 h-12 text-white" />
+                    </div>
+                    {/* Connection nodes */}
+                    <div className="absolute top-0 left-0 w-8 h-8 bg-white/30 rounded-full"></div>
+                    <div className="absolute top-4 right-0 w-6 h-6 bg-white/30 rounded-full"></div>
+                    <div className="absolute bottom-0 left-4 w-10 h-10 bg-white/30 rounded-full"></div>
+                    <div className="absolute bottom-4 right-4 w-8 h-8 bg-white/30 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Very High Needs Funding
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Specialized vocational programs that build community participation and employment pathways.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 4: Hosted Funding */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-amber-500 to-amber-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Budget Control Visual */}
+                  <div className="flex flex-col items-center">
+                    <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                      <Coins className="w-14 h-14 text-white" />
+                    </div>
+                    <div className="flex gap-2 mt-4">
+                      <div className="w-16 h-4 bg-white/30 rounded-full"></div>
+                      <div className="w-12 h-4 bg-white/30 rounded-full"></div>
+                      <div className="w-20 h-4 bg-white/30 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Hosted Funding
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We handle the admin so you can control your personal disability budget your way.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 5: Private Support */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-rose-500 to-rose-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Personal Support Visual */}
+                  <div className="flex items-center justify-center">
+                    <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                      <HandHeart className="w-16 h-16 text-white" />
+                    </div>
+                    {/* Support elements */}
+                    <div className="absolute -top-2 -left-4 w-12 h-12 bg-white/15 rounded-full flex items-center justify-center">
+                      <Users className="w-6 h-6 text-white/80" />
+                    </div>
+                    <div className="absolute -bottom-2 -right-4 w-16 h-16 bg-white/15 rounded-full flex items-center justify-center">
+                      <Shield className="w-8 h-8 text-white/80" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Private Support
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Self-funded disability support tailored exactly to your needs and preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 6: Residential Services */}
+          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Visual Side */}
+              <div className="lg:w-1/2 bg-gradient-to-br from-indigo-500 to-indigo-600 p-8 flex items-center justify-center min-h-[320px]">
+                <div className="relative">
+                  {/* Residential Visual */}
+                  <div className="flex items-center justify-center">
+                    <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                      <Home className="w-14 h-14 text-white" />
+                    </div>
+                    {/* Community dots */}
+                    <div className="absolute top-2 left-2 w-6 h-6 bg-white/30 rounded-full"></div>
+                    <div className="absolute top-8 right-2 w-8 h-8 bg-white/30 rounded-full"></div>
+                    <div className="absolute bottom-2 left-8 w-4 h-4 bg-white/30 rounded-full"></div>
+                    <div className="absolute bottom-8 right-8 w-6 h-6 bg-white/30 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Side */}
+              <div className="lg:w-1/2 p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Residential Services
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  24/7 comprehensive care in a safe, supportive home environment with professional staff.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center glass-card p-8 rounded-3xl">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Ready to explore your options?
+
+        {/* CTA Section */}
+        <div className="text-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12">
+          <h3 className="text-3xl font-bold text-white mb-4">
+            Ready to explore your support options?
           </h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg">
             Every person is unique, and so are their support needs. Let's work together to create a support plan that's right for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
-              Schedule a consultation
-              <Users className="w-5 h-5" />
+            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
+              Schedule a Consultation
+              <ChevronRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg">
-              Download our brochure
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              Download Our Brochure
             </Button>
           </div>
         </div>
