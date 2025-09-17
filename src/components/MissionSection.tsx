@@ -36,7 +36,7 @@ export const MissionSection = () => {
                   src="https://www.youtube-nocookie.com/embed/nzZ6WQOEc6Q?rel=0&modestbranding=1&controls=1"
                   title="Renaissance Community Video"
                   className="absolute inset-0 w-full h-full"
-                  frameBorder="0"
+                  style={{ border: 0 }}
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   loading="lazy"
@@ -61,7 +61,7 @@ export const MissionSection = () => {
                   src="https://www.youtube-nocookie.com/embed/eD9GjylI1G4?rel=0&modestbranding=1&controls=1"
                   title="Renaissance Support Stories"
                   className="absolute inset-0 w-full h-full"
-                  frameBorder="0"
+                  style={{ border: 0 }}
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   loading="lazy"
