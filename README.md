@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+# Renaissance Group Website Demo
 
-## Project info
+This is a demonstration website for Renaissance Group, a disability support services organization.
 
-**URL**: https://lovable.dev/projects/b255f65b-7321-4c4d-8175-9e8e41d42cad
+## About
 
-## How can I edit this code?
+Renaissance Group is dedicated to supporting people with disabilities to achieve their goals and participate fully in their communities. This website showcases their services including:
 
-There are several ways of editing your application.
+- Choices in Community Living
+- Supported Living Services
+- Very High Needs Funding
+- Hosted Funding
+- Private Support
+- Residential Services
 
-**Use Lovable**
+## Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b255f65b-7321-4c4d-8175-9e8e41d42cad) and start prompting.
+The website is deployed at: https://mitchgc.github.io/renaissance-visions-explorer/
 
-Changes made via Lovable will be committed automatically to this repo.
+## Development
 
-**Use your preferred IDE**
+This project is built with modern web technologies:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Vite** - Build tool and development server
+- **React 18** - UI framework with TypeScript
+- **shadcn/ui** - Component library built on Radix UI
+- **Tailwind CSS** - Utility-first styling framework
+- **React Router** - Client-side routing
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Getting Started
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/mitchgc/renaissance-visions-explorer.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to project directory
+cd renaissance-visions-explorer
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run dev        # Start development server (port 8080)
+npm run build      # Build for production
+npm run preview    # Preview production build
+npm run lint       # Lint code
+```
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The site is automatically deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the main branch.
 
-## What technologies are used for this project?
+## License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b255f65b-7321-4c4d-8175-9e8e41d42cad) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This is a demo project for demonstration purposes.
