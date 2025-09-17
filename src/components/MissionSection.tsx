@@ -33,12 +33,13 @@ export const MissionSection = () => {
             <div className="flex flex-col items-end justify-end flex-grow space-y-4">
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-black/5 w-full">
                 <iframe
-                  src="https://www.youtube.com/embed/nzZ6WQOEc6Q"
+                  src="https://www.youtube-nocookie.com/embed/nzZ6WQOEc6Q?rel=0&modestbranding=1&controls=1"
                   title="Renaissance Community Video"
                   className="absolute inset-0 w-full h-full"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
 
@@ -57,12 +58,13 @@ export const MissionSection = () => {
             <div className="flex flex-col items-end justify-end flex-grow space-y-4">
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-white/10 w-full">
                 <iframe
-                  src="https://www.youtube.com/embed/eD9GjylI1G4"
+                  src="https://www.youtube-nocookie.com/embed/eD9GjylI1G4?rel=0&modestbranding=1&controls=1"
                   title="Renaissance Support Stories"
                   className="absolute inset-0 w-full h-full"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
 
