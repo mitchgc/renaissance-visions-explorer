@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 export const ContactSection = () => {
@@ -46,32 +46,29 @@ export const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-5 gap-16">
           {/* Contact Information */}
-          <div className="space-y-8 animate-fade-up">
+          <div className="lg:col-span-2 space-y-8 animate-fade-up">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-colors">
                   <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-white" />
+                    <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                    <p className="text-muted-foreground">0800 SUPPORT (0800 787 7678)</p>
-                    <p className="text-sm text-muted-foreground">Available 24/7 for emergencies</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-colors">
-                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                    <p className="text-muted-foreground">info@renaissancegroup.co.nz</p>
-                    <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
+                    <h4 className="font-semibold text-foreground mb-1">Papakura</h4>
+                    <a
+                      href="https://maps.app.goo.gl/vjRZNYRG5qdCWXPU7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors block"
+                    >
+                      29 Grove Road, Papakura
+                    </a>
+                    <p className="text-muted-foreground">Phone: 09 250 4346</p>
+                    <p className="text-sm text-muted-foreground">Hours: 8:00 AM - 4:30 PM</p>
                   </div>
                 </div>
 
@@ -80,37 +77,54 @@ export const ContactSection = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Address</h4>
-                    <p className="text-muted-foreground">123 Community Street</p>
-                    <p className="text-muted-foreground">Auckland, New Zealand</p>
+                    <h4 className="font-semibold text-foreground mb-1">Rosedale</h4>
+                    <a
+                      href="https://maps.google.com/?q=101+Apollo+Drive,+Rosedale,+Auckland"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors block"
+                    >
+                      Unit I, 101 Apollo Drive
+                    </a>
+                    <p className="text-muted-foreground">Phone: 09 250 4346</p>
+                    <p className="text-sm text-muted-foreground">By appointment</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-colors">
                   <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-white" />
+                    <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Office Hours</h4>
-                    <p className="text-muted-foreground">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p className="text-muted-foreground">Saturday: 9:00 AM - 4:00 PM</p>
+                    <h4 className="font-semibold text-foreground mb-1">Hamilton</h4>
+                    <a
+                      href="https://maps.google.com/?q=169+London+Street,+Hamilton"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors block"
+                    >
+                      Office 5.2, 169 London Street
+                    </a>
+                    <p className="text-muted-foreground">Phone: 07 444 5245</p>
+                    <p className="text-sm text-muted-foreground">By appointment</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Urgent After Hours Support</h4>
+                    <p className="text-muted-foreground">09 390 0066</p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="gradient-card p-6 rounded-2xl">
-              <h4 className="text-lg font-semibold text-foreground mb-3">Quick Response Guarantee</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                We understand that reaching out for support can be a big step. That's why we guarantee 
-                to respond to all inquiries within 24 hours. Our team is here to listen, understand, 
-                and help you find the right solutions.
-              </p>
-            </div>
           </div>
 
           {/* Contact Form */}
-          <div className="animate-scale-in">
+          <div className="lg:col-span-3 animate-scale-in">
             <div className="bg-white rounded-3xl p-8 shadow-elegant">
               <h3 className="text-2xl font-bold text-foreground mb-6">Send us a message</h3>
               

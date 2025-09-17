@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Home, Users, Shield, Zap, ChevronRight, HandHeart, Globe, Coins } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const ServicesSection = () => {
   return (
@@ -23,17 +24,15 @@ export const ServicesSection = () => {
         {/* Services Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {/* Service 1: Choices in Community */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/choices-in-community" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-purple-500 to-purple-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#B75A5E] to-[#a04e4e] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Community Visual */}
                   <div className="flex items-center justify-center">
                     <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                       <Users className="w-16 h-16 text-white" />
                     </div>
-                    {/* Floating elements */}
                     <div className="absolute -top-4 -left-8 w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
                       <Heart className="w-8 h-8 text-white/80" />
                     </div>
@@ -46,7 +45,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Choices in Community
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -54,15 +53,14 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 2: Supported Living */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/supported-living" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-blue-500 to-blue-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#4098B8] to-[#3581a5] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Independent Living Visual */}
                   <div className="flex flex-col items-center">
                     <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm mb-4">
                       <Home className="w-14 h-14 text-white" />
@@ -84,7 +82,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Supported Living
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -92,20 +90,18 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 3: Very High Needs Funding */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/very-high-needs-funding" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#C2C372] to-[#abb062] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Network Visual */}
                   <div className="flex items-center justify-center">
                     <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                       <Globe className="w-12 h-12 text-white" />
                     </div>
-                    {/* Connection nodes */}
                     <div className="absolute top-0 left-0 w-8 h-8 bg-white/30 rounded-full"></div>
                     <div className="absolute top-4 right-0 w-6 h-6 bg-white/30 rounded-full"></div>
                     <div className="absolute bottom-0 left-4 w-10 h-10 bg-white/30 rounded-full"></div>
@@ -116,7 +112,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Very High Needs Funding
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -124,15 +120,14 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 4: Hosted Funding */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/hosted-funding" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-amber-500 to-amber-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#B75A5E] to-[#a04e4e] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Budget Control Visual */}
                   <div className="flex flex-col items-center">
                     <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
                       <Coins className="w-14 h-14 text-white" />
@@ -148,7 +143,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Hosted Funding
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -156,20 +151,18 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 5: Private Support */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/private-support" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-rose-500 to-rose-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#4098B8] to-[#3581a5] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Personal Support Visual */}
                   <div className="flex items-center justify-center">
                     <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                       <HandHeart className="w-16 h-16 text-white" />
                     </div>
-                    {/* Support elements */}
                     <div className="absolute -top-2 -left-4 w-12 h-12 bg-white/15 rounded-full flex items-center justify-center">
                       <Users className="w-6 h-6 text-white/80" />
                     </div>
@@ -182,7 +175,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Private Support
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -190,20 +183,18 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Service 6: Residential Services */}
-          <div className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+          <Link to="/services/residential-services" className="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer block">
             <div className="flex flex-col lg:flex-row">
               {/* Visual Side */}
-              <div className="lg:w-1/2 bg-gradient-to-br from-indigo-500 to-indigo-600 p-8 flex items-center justify-center min-h-[320px]">
+              <div className="lg:w-1/2 bg-gradient-to-br from-[#C2C372] to-[#abb062] p-8 flex items-center justify-center min-h-[320px]">
                 <div className="relative">
-                  {/* Residential Visual */}
                   <div className="flex items-center justify-center">
                     <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
                       <Home className="w-14 h-14 text-white" />
                     </div>
-                    {/* Community dots */}
                     <div className="absolute top-2 left-2 w-6 h-6 bg-white/30 rounded-full"></div>
                     <div className="absolute top-8 right-2 w-8 h-8 bg-white/30 rounded-full"></div>
                     <div className="absolute bottom-2 left-8 w-4 h-4 bg-white/30 rounded-full"></div>
@@ -214,7 +205,7 @@ export const ServicesSection = () => {
 
               {/* Content Side */}
               <div className="lg:w-1/2 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-[#111727] mb-4">
                   Residential Services
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -222,28 +213,10 @@ export const ServicesSection = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
 
-        {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12">
-          <h3 className="text-3xl font-bold text-white mb-4">
-            Ready to explore your support options?
-          </h3>
-          <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg">
-            Every person is unique, and so are their support needs. Let's work together to create a support plan that's right for you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-              Schedule a Consultation
-              <ChevronRight className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-              Download Our Brochure
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );

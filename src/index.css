@@ -8,53 +8,53 @@
   :root {
     /* Core Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 203 85% 19%; /* 0C455C */
+    --foreground: 220 100% 10%; /* #111727 */
 
     --card: 0 0% 100%;
-    --card-foreground: 203 85% 19%; /* 0C455C */
+    --card-foreground: 220 100% 10%; /* #111727 */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 203 85% 19%; /* 0C455C */
+    --popover-foreground: 220 100% 10%; /* #111727 */
 
     /* Brand Palette Based on Provided Colors */
-    --primary: 203 85% 19%;        /* 0C455C - Dark Blue */
+    --primary: 220 100% 10%;        /* #111727 - Secondary dark */
     --primary-foreground: 0 0% 100%;
-    
-    --secondary: 197 50% 48%;      /* 4098B8 - Corrected Medium Blue */
+
+    --secondary: 195 49% 50%;       /* #4098B8 - Blue */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 15% 45%;
 
     /* Warm Accent Colors */
-    --accent: 1 30% 53%;           /* B75A5E - Muted Red/Pink */
+    --accent: 358 32% 54%;          /* #B75A5E - Red */
     --accent-foreground: 0 0% 100%;
-    
-    --accent-secondary: 60 25% 60%; /* C2C372 - Olive Green */
-    --accent-secondary-foreground: 0 0% 100%;
+
+    --accent-secondary: 68 41% 60%; /* #C2C372 - Yellow */
+    --accent-secondary-foreground: 0 0% 20%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 15% 90%;
     --input: 220 15% 95%;
-    --ring: 203 85% 19%;           /* 0C455C */
+    --ring: 220 100% 10%;           /* #111727 */
 
     --radius: 1rem;
 
     /* Solid Colors - No Gradients */
-    --gradient-primary: hsl(203, 85%, 19%); /* 0C455C */
-    --gradient-hero: hsl(203, 85%, 19%); /* 0C455C */
+    --gradient-primary: hsl(220, 100%, 10%); /* #111727 */
+    --gradient-hero: hsl(220, 100%, 10%); /* #111727 */
     
     /* Glassmorphism */
     --glass-bg: hsla(0, 0%, 100%, 0.1);
     --glass-border: hsla(0, 0%, 100%, 0.2);
     
     /* Shadows & Glows */
-    --shadow-elegant: 0 20px 40px -10px hsla(203, 85%, 19%, 0.3); /* 0C455C shadow */
+    --shadow-elegant: 0 20px 40px -10px hsla(220, 100%, 10%, 0.3); /* #111727 shadow */
     --shadow-card: 0 8px 32px -8px hsla(220, 15%, 25%, 0.15);
-    --glow-primary: 0 0 40px hsla(197, 50%, 48%, 0.6); /* 4098B8 glow */
-    --glow-accent: 0 0 30px hsla(1, 30%, 53%, 0.5); /* B75A5E glow */
+    --glow-primary: 0 0 40px hsla(195, 49%, 50%, 0.6); /* #4098B8 glow */
+    --glow-accent: 0 0 30px hsla(358, 32%, 54%, 0.5); /* #B75A5E glow */
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,45 +78,45 @@
   }
 
   .dark {
-    --background: 203 85% 10%; /* Darker version of 0C455C */
+    --background: 220 100% 8%; /* Darker version of #111727 */
     --foreground: 0 0% 95%;
 
-    --card: 203 85% 12%;
+    --card: 220 100% 10%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 203 85% 12%;
+    --popover: 220 100% 10%;
     --popover-foreground: 0 0% 95%;
 
     /* Dark Mode Brand Palette */
-    --primary: 203 85% 25%;        /* 0C455C - Adjusted for dark mode */
+    --primary: 220 100% 15%;        /* #111727 - Adjusted for dark mode */
     --primary-foreground: 0 0% 100%;
-    
-    --secondary: 197 50% 55%;      /* 4098B8 - Brighter for dark mode */
+
+    --secondary: 195 49% 60%;       /* #4098B8 - Brighter for dark mode */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 203 85% 15%;
-    --muted-foreground: 197 50% 70%;
+    --muted: 220 100% 12%;
+    --muted-foreground: 195 49% 70%;
 
     /* Dark Mode Accent Colors */
-    --accent: 1 30% 60%;           /* B75A5E - Brighter for dark mode */
+    --accent: 358 32% 60%;          /* #B75A5E - Brighter for dark mode */
     --accent-foreground: 0 0% 100%;
-    
-    --accent-secondary: 60 25% 65%; /* C2C372 - Brighter for dark mode */
-    --accent-secondary-foreground: 0 0% 100%;
+
+    --accent-secondary: 68 41% 70%; /* #C2C372 - Brighter for dark mode */
+    --accent-secondary-foreground: 0 0% 20%;
 
     --destructive: 0 84% 65%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 203 85% 20%;
-    --input: 203 85% 15%;
-    --ring: 203 85% 25%;           /* 0C455C */
+    --border: 220 100% 15%;
+    --input: 220 100% 12%;
+    --ring: 220 100% 15%;           /* #111727 */
 
     /* Dark Mode Solid Colors */
-    --gradient-primary: hsl(203, 85%, 25%); /* 0C455C */
-    --gradient-hero: hsl(203, 85%, 25%); /* 0C455C */
+    --gradient-primary: hsl(220, 100%, 15%); /* #111727 */
+    --gradient-hero: hsl(220, 100%, 15%); /* #111727 */
     
     /* Dark Glassmorphism */
-    --glass-bg: hsla(203, 85%, 12%, 0.6);
+    --glass-bg: hsla(220, 100%, 10%, 0.6);
     --glass-border: hsla(0, 0%, 100%, 0.1);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
